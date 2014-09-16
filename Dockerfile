@@ -1,7 +1,7 @@
 FROM progrium/busybox
 
-VOLUME /shared
-WORKDIR SHARED
+VOLUME /data
+WORKDIR /data
 
 RUN opkg-install curl bash git
 CMD ["/bin/bash"]
